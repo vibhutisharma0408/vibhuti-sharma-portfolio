@@ -48,6 +48,7 @@ const About = () => {
                 <p>
                   Recent work includes an AI‑powered nutrition assistant and a loan management platform with auth, multi‑step forms, dashboards, and Firebase. I like working end‑to‑end: components, state, APIs, and deployment.
                 </p>
+
                 <p>
                   Open to roles where I can build real features, iterate with feedback, and own outcomes.
                 </p>
@@ -55,10 +56,10 @@ const About = () => {
               
               <div className="flex flex-wrap gap-4 mt-8">
                 <a
-                  href={`${import.meta.env.BASE_URL}Vibhuti-Sharma-Resume.pdf`}
+                  href={`${import.meta.env.BASE_URL}Vibhuti_Sharma_Resume%20(18).pdf`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  download="Vibhuti-Sharma-Resume.pdf"
+                  download="Vibhuti_Sharma_Resume.pdf"
                   className="portfolio-button-hero flex items-center gap-2"
                 >
                   <Download size={20} />

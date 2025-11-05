@@ -8,7 +8,6 @@ const Navbar = () => {
   const navItems = [
     { id: 'home', label: 'Home' },
     { id: 'about', label: 'About' },
-    { id: 'experience', label: 'Experience' },
     { id: 'skills', label: 'Skills' },
     { id: 'projects', label: 'Projects' },
     { id: 'contact', label: 'Contact' },
@@ -45,6 +44,23 @@ const Navbar = () => {
     setIsOpen(false);
   };
 
+  const resumeUrl = `${import.meta.env.BASE_URL}Vibhuti_Sharma_Resume%20(18).pdf`;
+  const handleResumeClick = (e: any) => {
+    e.preventDefault();
+    const url = resumeUrl;
+    // Open in a new tab
+    window.open(url, '_blank', 'noopener,noreferrer');
+    // Trigger download
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'Vibhuti_Sharma_Resume.pdf';
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    // Close mobile menu if open
+    setIsOpen(false);
+  };
+
   return (
     <nav className="fixed top-0 w-full bg-background/95 backdrop-blur-sm border-b border-border z-50">
       <div className="max-w-7xl mx-auto px-6">
@@ -71,10 +87,11 @@ const Navbar = () => {
                 </button>
               ))}
               <a
-                href={`${import.meta.env.BASE_URL}Vibhuti-Sharma-Resume.pdf`}
+                href={resumeUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                download="Vibhuti-Sharma-Resume.pdf"
+                download="Vibhuti_Sharma_Resume.pdf"
+                onClick={handleResumeClick}
                 className="portfolio-button flex items-center gap-2"
               >
                 <Download size={18} />
@@ -108,10 +125,11 @@ const Navbar = () => {
                 </button>
               ))}
               <a
-                href={`${import.meta.env.BASE_URL}Vibhuti-Sharma-Resume.pdf`}
+                href={resumeUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                download="Vibhuti-Sharma-Resume.pdf"
+                download="Vibhuti_Sharma_Resume.pdf"
+                onClick={handleResumeClick}
                 className="block w-full text-left px-3 py-2 rounded-md portfolio-button flex items-center gap-2"
               >
                 <Download size={18} />

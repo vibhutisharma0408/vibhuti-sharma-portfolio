@@ -14,6 +14,19 @@ const Hero = () => {
     }
   };
 
+  const resumeUrl = `${import.meta.env.BASE_URL}Vibhuti_Sharma_Resume%20(18).pdf`;
+  const handleResumeClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const url = resumeUrl;
+    window.open(url, '_blank', 'noopener,noreferrer');
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'Vibhuti_Sharma_Resume.pdf';
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+  };
+
   return (
     <section id="home" className="min-h-screen flex items-center justify-center bg-[var(--gradient-hero)]">
       <div className="max-w-7xl mx-auto px-6 py-20">
@@ -59,6 +72,17 @@ const Hero = () => {
                 Hire Me / Contact
                 <Download size={20} />
               </button>
+
+              <a
+                href={resumeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={handleResumeClick}
+                className="portfolio-button flex items-center gap-2"
+              >
+                <Download size={20} />
+                Resume
+              </a>
             </div>
 
             <button
