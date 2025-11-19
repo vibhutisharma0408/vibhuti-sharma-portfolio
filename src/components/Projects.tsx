@@ -1,6 +1,7 @@
 import { ExternalLink, Github, Globe } from 'lucide-react';
 import loanAppImage from '@/assets/loanapp-project.png';
 import eatSmartImage from '@/assets/eatsmart-project.png';
+import herbeeImage from '@/assets/herbee-project.png';
 
 const Projects = () => {
   const projects = [
@@ -35,6 +36,22 @@ const Projects = () => {
         "Goal‑based recommendations"
       ],
       image: eatSmartImage
+    },
+    {
+      title: "Herbee – Skincare Store Frontend",
+      description: "Modern skincare e‑commerce UI built with React + Tailwind. Firebase auth, smooth animations, and fully responsive layouts.",
+      technologies: ["React.js", "Tailwind CSS", "CSS", "Firebase", "Frontend"],
+      liveUrl: "https://skinbrand.netlify.app/",
+      githubUrl: "https://github.com/vibhutisharma0408/skincare-brand",
+      features: [
+        "Product listings with soft, organic visual theme",
+        "Firebase login & signup with protected routes",
+        "Responsive across mobile, tablet, desktop",
+        "Interactive product details view",
+        "Add‑to‑cart and wishlist (optional)",
+        "Dynamic handling of product data"
+      ],
+      image: herbeeImage
     }
   ];
 
