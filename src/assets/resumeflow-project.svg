@@ -1,0 +1,64 @@
+<svg width="1440" height="810" viewBox="0 0 1440 810" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#eef4ff"/>
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="25" stdDeviation="35" flood-color="#0f172a" flood-opacity="0.12"/>
+    </filter>
+    <linearGradient id="cta" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff8a00"/>
+      <stop offset="100%" stop-color="#ff5a00"/>
+    </linearGradient>
+  </defs>
+  <rect width="1440" height="810" fill="url(#bg)"/>
+
+  <!-- Navbar -->
+  <g font-family="Inter, Arial, sans-serif" font-weight="600">
+    <circle cx="120" cy="92" r="28" fill="#2563eb"/>
+    <path d="M116 92l8-8v6h8v4h-8v6z" fill="#fff"/>
+    <text x="168" y="104" font-size="30" fill="#0f172a">RESUMEFLOW</text>
+    <rect x="1200" y="60" width="160" height="56" rx="14" fill="url(#cta)"/>
+    <text x="1234" y="98" font-size="24" fill="#fff">Get Started</text>
+  </g>
+
+  <!-- Hero Text -->
+  <g font-family="Poppins, Arial, sans-serif">
+    <text x="150" y="250" font-size="82" font-weight="700" fill="#0f172a" letter-spacing="2">
+      BUILD YOUR DREAM
+    </text>
+    <text x="150" y="340" font-size="82" font-weight="700" fill="#0f172a" letter-spacing="2">
+      CAREER
+    </text>
+    <path d="M120 270 C340 160 640 420 860 330" stroke="#ffd600" stroke-width="32" stroke-linecap="round"/>
+    <text x="150" y="410" font-size="28" font-weight="400" fill="#374151">
+      Create a professional resume in minutes with our easy-to-use builder.
+    </text>
+    <rect x="150" y="450" width="300" height="70" rx="18" fill="url(#cta)"/>
+    <text x="186" y="496" font-size="20" font-weight="600" fill="#fff">
+      CREATE MY RESUME - IT'S FREE!
+    </text>
+    <text x="470" y="495" font-size="20" fill="#64748b">No credit card required</text>
+  </g>
+
+  <!-- Hero Card -->
+  <g filter="url(#softShadow)">
+    <rect x="870" y="180" width="420" height="360" rx="32" fill="#fff"/>
+    <rect x="950" y="220" width="260" height="12" rx="6" fill="#2563eb" opacity="0.8"/>
+    <rect x="910" y="260" width="340" height="60" rx="16" fill="#ebf2ff"/>
+    <circle cx="950" cy="290" r="26" fill="#2563eb"/>
+    <path d="M943 290l10-10v8h12v4h-12v8z" fill="#fff"/>
+    <rect x="910" y="336" width="320" height="10" rx="5" fill="#cbd5f5"/>
+    <rect x="910" y="356" width="280" height="10" rx="5" fill="#e2e8f0"/>
+    <rect x="910" y="386" width="120" height="24" rx="12" fill="#e2e8f0"/>
+    <rect x="1040" y="386" width="120" height="24" rx="12" fill="#e2e8f0"/>
+    <rect x="1170" y="386" width="60" height="24" rx="12" fill="#e2e8f0"/>
+  </g>
+
+  <!-- Section heading preview -->
+  <text x="150" y="620" font-family="Poppins, Arial, sans-serif" font-size="48" font-weight="700" fill="#0f172a">
+    Why Choose <tspan fill="#2563eb">RESUMEFLOW?</tspan>
+  </text>
+</svg>
+

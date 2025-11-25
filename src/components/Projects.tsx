@@ -2,9 +2,23 @@ import { ExternalLink, Github, Globe } from 'lucide-react';
 import loanAppImage from '@/assets/loanapp-project.png';
 import eatSmartImage from '@/assets/eatsmart-project.png';
 import herbeeImage from '@/assets/herbee-project.png';
+import resumeflowImage from '@/assets/resumeflow-project.svg';
 
 const Projects = () => {
   const projects = [
+    {
+      title: "Resume Builder Web Application",
+      description: "Full-stack resume platform offering guided creation, template customization, and secure storage so users can build polished resumes in minutes.",
+      technologies: ["Full-Stack", "React", "Node.js", "Express", "MongoDB", "Tailwind CSS", "GitHub"],
+      liveUrl: "https://github.com/vibhutisharma0408/Resumeflow",
+      githubUrl: "https://github.com/vibhutisharma0408/Resumeflow",
+      features: [
+        "Create, edit, and download professional resumes via an intuitive builder",
+        "Multiple templates with live preview plus PDF export for instant sharing",
+        "Secure authentication to save personalized resumes across sessions"
+      ],
+      image: resumeflowImage
+    },
     {
       title: "Loan Application Management System",
       description: "End‑to‑end loan workflow with auth, multi‑step forms, comparison, and an analytics dashboard. Built for clarity and speed with optimized renders and form validation.",
