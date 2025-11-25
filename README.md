@@ -24,4 +24,6 @@ npm run preview
 
 ## Deployment
 
-Deploy on any static host (Vercel, Netlify, Cloudflare Pages, GitHub Pages). The site is a SPA built to `dist/`.
+- Build locally: `npm run build` → deploy the `dist/` folder
+- **Netlify**: build command `npm run build`, publish directory `dist`, single-page routing handled via `/public/_redirects`
+- Other static hosts (Vercel, Cloudflare Pages, GitHub Pages) can also serve the `dist/` output directly
