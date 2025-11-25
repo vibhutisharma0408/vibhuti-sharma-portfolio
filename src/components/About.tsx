@@ -56,10 +56,10 @@ const About = () => {
               
               <div className="flex flex-wrap gap-4 mt-8">
                 <a
-                  href={`${import.meta.env.BASE_URL}Vibhuti_Sharma_Resume.pdf`}
+                  href={`${import.meta.env.BASE_URL}Vibhuti-Sharma-Resume.pdf`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  download="Vibhuti_Sharma_Resume.pdf"
+                  download="Vibhuti-Sharma-Resume.pdf"
                   className="portfolio-button-hero flex items-center gap-2"
                 >
                   <Download size={20} />

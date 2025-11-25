@@ -44,7 +44,7 @@ const Navbar = () => {
     setIsOpen(false);
   };
 
-  const resumeUrl = `${import.meta.env.BASE_URL}Vibhuti_Sharma_Resume.pdf`;
+  const resumeUrl = `${import.meta.env.BASE_URL}Vibhuti-Sharma-Resume.pdf`;
   const handleResumeClick = (e: any) => {
     e.preventDefault();
     const url = resumeUrl;
@@ -53,7 +53,7 @@ const Navbar = () => {
     // Trigger download
     const a = document.createElement('a');
     a.href = url;
-    a.download = 'Vibhuti_Sharma_Resume.pdf';
+    a.download = 'Vibhuti-Sharma-Resume.pdf';
     document.body.appendChild(a);
     a.click();
     a.remove();
@@ -90,7 +90,7 @@ const Navbar = () => {
                 href={resumeUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                download="Vibhuti_Sharma_Resume.pdf"
+                download="Vibhuti-Sharma-Resume.pdf"
                 onClick={handleResumeClick}
                 className="portfolio-button flex items-center gap-2"
               >
@@ -128,7 +128,7 @@ const Navbar = () => {
                 href={resumeUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                download="Vibhuti_Sharma_Resume.pdf"
+                download="Vibhuti-Sharma-Resume.pdf"
                 onClick={handleResumeClick}
                 className="block w-full text-left px-3 py-2 rounded-md portfolio-button flex items-center gap-2"
               >

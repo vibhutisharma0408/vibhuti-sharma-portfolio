@@ -14,14 +14,14 @@ const Hero = () => {
     }
   };
 
-  const resumeUrl = `${import.meta.env.BASE_URL}Vibhuti_Sharma_Resume.pdf`;
+  const resumeUrl = `${import.meta.env.BASE_URL}Vibhuti-Sharma-Resume.pdf`;
   const handleResumeClick = (e: React.MouseEvent) => {
     e.preventDefault();
     const url = resumeUrl;
     window.open(url, '_blank', 'noopener,noreferrer');
     const a = document.createElement('a');
     a.href = url;
-    a.download = 'Vibhuti_Sharma_Resume.pdf';
+    a.download = 'Vibhuti-Sharma-Resume.pdf';
     document.body.appendChild(a);
     a.click();
     a.remove();
